@@ -1,0 +1,23 @@
+.gold {color: #c5b358;}
+
+.img-container {
+  width: 82%;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-container img {
+  max-height:100%;
+  max-width: 100%;
+}
+
+.boxed {
+  border: 1rem solid #c5b358 ;
+}
+
+.center-text {text-align: center;}
+
+.kelly-name-font {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+}
