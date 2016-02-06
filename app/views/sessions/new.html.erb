@@ -1,17 +1,15 @@
-<div class="ui middle aligned grid container">
+<div class="ui container">
   <div class="row">
-    <div class="eight wide column">
-      <form class="ui form">
-        <div class="field">
-          <label>Username</label>
-          <input type="text" name="username" placeholder="Username">
-        </div>
-        <div class="field">
-          <label>Password</label>
-          <input type="text" name="password" placeholder="Password">
-        </div>
-        <button class="ui button" type="submit">Submit</button>
-      </form>
-    </div>
+    <%=form_tag sessions_path, :class => "ui form" do %>
+      <div class ="field">
+        <%= label_tag :username %>
+        <%= text_field_tag :username %>
+      </div>
+      <div class ="field">
+        <%= label_tag :password %>
+        <%= password_field_tag :password %>
+      </div>
+      <%= submit_tag 'Login', :class => "ui  teal button" %>
+    <% end %>
   </div>
 </div>
