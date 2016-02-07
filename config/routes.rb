@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :events
 
   get 'login' => 'sessions#new'
+  get 'logout' => 'sessions#destroy'
 end

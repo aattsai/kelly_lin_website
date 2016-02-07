@@ -5,7 +5,8 @@
       Hello <%= current_user.username %>~ How are you doing today?
     </h3>
     <div>
-      <%= link_to "Add a new event", new_event_path, class: "ui red basic inverted button" %>
+      <%= link_to "Add a new event", new_event_path, class: "ui olive basic inverted button" %>
+      <%= link_to "Sign Out", logout_path, class: "ui red basic inverted button" %>
     </div>
   <% end %>
   </div>
@@ -36,7 +37,7 @@
       </tr>
     </table>
   <% end %>
-
+  <div class="ui horizontal divider"><i class="ui icon cube"></i></div>
 </div>
 
 
