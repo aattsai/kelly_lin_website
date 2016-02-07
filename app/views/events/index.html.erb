@@ -1,0 +1,43 @@
+<div class="ui container ">
+  <div class="ui inverted vertical masthead center aligned segment">
+  <% if current_user %>
+    <h3>
+      Hello <%= current_user.username %>~ How are you doing today?
+    </h3>
+    <div>
+      <%= link_to "Add a new event", new_event_path, class: "ui red basic inverted button" %>
+    </div>
+  <% end %>
+  </div>
+
+  <h1>Upcoming Events</h1>
+
+  <% @events.each do |event| %>
+    <table data-purpose="event-list">
+      <tr>
+        <td>Name: </td>
+        <td><%= event.name %></td>
+      </tr>
+      <tr>
+        <td>Location: </td>
+        <td><%= event.location %></td>
+      </tr>
+      <tr>
+        <td>Date: </td>
+        <td><%= event.date %></td>
+      </tr>
+      <tr>
+        <td>Time: </td>
+        <td><%= event.time.strftime('%r') %></td>
+      </tr>
+      <tr>
+        <td>description: </td>
+        <td><%= event.description %></td>
+      </tr>
+    </table>
+  <% end %>
+
+</div>
+
+
+
