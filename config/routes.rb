@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   resources :homepage, only: ['index']
   resources :sessions, only: ['create', 'destroy']
+  resources :events
 
   get 'login' => 'sessions#new'
+  get 'logout' => 'sessions#destroy'
 end

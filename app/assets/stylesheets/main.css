@@ -1,9 +1,13 @@
 .gold {color: #c5b358;}
 
+body {
+  background-color: #E5E5E5;
+}
+
 .img-container {
   width: 82%;
   display: block;
-  margin: 0 auto;
+  margin: 0% auto;
 }
 
 .img-container img {
@@ -16,6 +20,12 @@
 }
 
 .center-text {text-align: center;}
+
+.about-text {
+  margin: 10%;
+  font-size: medium;
+  text-align: justify;
+}
 
 .kelly-name-font {
   font-family: 'Josefin Sans', sans-serif;
