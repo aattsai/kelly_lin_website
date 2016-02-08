@@ -1,1 +1,35 @@
-Create an event!
+<div class="ui vertical masthead segment">
+<div class="ui container">
+  <h2 class= "center-text">Create an event!</h2>
+
+  <%= form_for @event, url:{action: "create"}, html: {class: "ui form"} do |f| %>
+    <div class="field">
+      <%= label_tag :event_name %>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= label_tag :venue %>
+      <%= f.text_field :venue %>
+    </div>
+    <div class="field">
+      <%= label_tag :location %>
+      <%= f.text_field :location %>
+    </div>
+    <div class="field">
+      <%= label_tag :description %>
+      <%= f.text_area :description, size: "60x12" %>
+    </div>
+    <div class="field">
+      <%= label_tag :date %>
+      <%= f.date_field :date %>
+    </div>
+    <div class="field">
+      <%= label_tag :time %>
+      <%= f.time_field :time %>
+    </div>
+    <br>
+    <div class="center-text field">
+      <%= f.submit "Create", :class => "ui fluid  button blue" %>
+    </div>
+  <% end %>
+</div>
