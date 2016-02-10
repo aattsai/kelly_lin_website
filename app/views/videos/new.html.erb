@@ -1,0 +1,19 @@
+<div class="ui vertical masthead segment">
+<div class="ui container">
+  <h2 class= "center-text">Add a video!</h2>
+
+  <%= form_for @video, url:{action: "create"}, html: {class: "ui form"} do |f| %>
+    <div class="field">
+      <%= label_tag :name %>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= label_tag :url %>
+      <%= f.text_field :url %>
+    </div>
+    <br>
+    <div class="center-text field">
+      <%= f.submit "Create", :class => "ui fluid  button blue" %>
+    </div>
+  <% end %>
+</div>
