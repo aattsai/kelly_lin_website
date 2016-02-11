@@ -29,6 +29,9 @@
       </tr>
     </table>
     <div class="ui horizontal divider"><i class="ui icon cube"></i></div>
+    <% if current_user %>
+      <%= link_to "Remove Event", new_event_path, class: "ui olive basic inverted button" %>
+    <% end %>
   <% end %>
 
 </div>
