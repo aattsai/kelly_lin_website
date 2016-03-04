@@ -10,7 +10,9 @@
         <% @videos.each do |video| %>
           <a class="video fancybox.iframe" href="https://www.youtube.com/embed/<%= video.url %>">
             <img class ="thumbnail" src= "http://img.youtube.com/vi/<%= video.url %>/0.jpg"/>
+            <h4 class="thumbnail-name"><%= video.name %></h4>
           </a>
+
         <% end %>
     </div>
   </div>

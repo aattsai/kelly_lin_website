@@ -44,3 +44,11 @@ body {
   margin: 1rem;
   display: block;
 }
+
+.thumbnail-name {
+  margin-left: 1rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: black;
+
+}
