@@ -1,0 +1,20 @@
+<div class="ui container">
+  <div class="ui grid">
+    <div class ="row">
+      <% if current_user %>
+        <%= link_to "Add a Video", new_video_path, class: "ui red button" %>
+      <% end %>
+    </div>
+    <div class="ui center aligned row">
+
+        <% @videos.each do |video| %>
+          <a class="video fancybox.iframe" href="https://www.youtube.com/embed/<%= video.url %>">
+            <img class ="thumbnail" src= "http://img.youtube.com/vi/<%= video.url %>/0.jpg"/>
+            <h4 class="thumbnail-name"><%= video.name %></h4>
+          </a>
+
+        <% end %>
+    </div>
+  </div>
+</div>
+

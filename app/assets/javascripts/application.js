@@ -15,8 +15,36 @@
 //= require semantic-ui
 //= require_tree .
 
-$(document).ready(function(){
-  $('#dancing_dream').click(function(){
-    $('#dancing_dream_video').modal('show');
-  });
+// $(document).ready(function(){
+//   $('#dancing_dream').click(function(){
+//     $('#dancing_dream_video').modal('show');
+//   });
+
+
+// });
+
+// $(document).ready(function() {
+//   $(".video").fancybox({
+//     maxWidth  : 800,
+//     maxHeight : 600,
+//     fitToView : false,
+//     width   : '100%',
+//     height    : '100%',
+//     autoSize  : true,
+//     closeClick  : false,
+//     openEffect  : 'fade',
+//     closeEffect : 'fade'
+//   });
+// });
+
+$(document).ready(function() {
+    $('.video').fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+        overlayColor: "#000",  // here you set the background black
+        overlayOpacity: 1,  // here you set the transparency of background: 1 = opaque
+        helpers : {
+            media : {}
+        }
+    });
 });
