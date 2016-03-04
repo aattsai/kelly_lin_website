@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require semantic-ui
 //= require_tree .
+
+$(document).ready(function(){
+  $('#dancing_dream').click(function(){
+    $('#dancing_dream_video').modal('show');
+  });
+});
