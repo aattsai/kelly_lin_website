@@ -70,11 +70,14 @@
   </h4>
 
 <div id="dancing_dream_video" class="ui modal">
-  <iframe src="https://www.youtube.com/embed/hjzppeZmN-I" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/hjzppeZmN-I" width="100%" height="100%" frameborder="0"></iframe>
 </div>
 
   <div class="ui vertical stripe segment">
     <div class="ui equal width stackable grid">
+        <% if current_user %>
+          <%= link_to "Add a Video", new_video_path, class: "ui red button" %>
+        <% end %>
       <div class="center aligned row">
         <div id ="dancing_dream" class="column">
           <img src="http://img.youtube.com/vi/hjzppeZmN-I/0.jpg"/>
