@@ -15,10 +15,24 @@
 //= require semantic-ui
 //= require_tree .
 
-$(document).ready(function(){
-  $('#dancing_dream').click(function(){
-    $('#dancing_dream_video').modal('show');
+// $(document).ready(function(){
+//   $('#dancing_dream').click(function(){
+//     $('#dancing_dream_video').modal('show');
+//   });
+
+
+// });
+
+$(document).ready(function() {
+  $(".video").fancybox({
+    maxWidth  : 800,
+    maxHeight : 600,
+    fitToView : false,
+    width   : '100%',
+    height    : '100%',
+    autoSize  : true,
+    closeClick  : false,
+    openEffect  : 'none',
+    closeEffect : 'none'
   });
-
-
 });
