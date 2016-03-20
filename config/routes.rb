@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :sessions, only: ['create', 'destroy']
   resources :events
   resources :videos
+  resources :photos
 
   get 'login' => 'sessions#new'
   get 'logout' => 'sessions#destroy'

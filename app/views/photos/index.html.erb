@@ -1,0 +1,20 @@
+<div class="ui container">
+  <div class="ui grid">
+    <div class="ui ten wide column">
+      <div class ="row">
+        <% if current_user %>
+          <%= link_to "Add a Photo", new_photo_path, class: "ui red button" %>
+        <% end %>
+      </div>
+      <div class="ui center aligned row">
+        <% @photos.each do |photo| %>
+          <a class="video fancybox.iframe" href="<%= photo.url %>">
+            <img class ="thumbnail" src= "<%= photo.url %>"/>
+            <p class="thumbnail-name"><%= photo.description %></p>
+          </a>
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
