@@ -2,16 +2,7 @@
 <!-- Page Contents top level section-->
 <div class="pusher">
   <div class="ui inverted vertical masthead center aligned segment">
-    <div class="ui container">
-      <div class="ui large secondary stackable inverted pointing menu">
-        <a class="item smoothScroll"" href="#about">About</a>
-        <a class="item" href="/events">Events</a>
-        <a class="item", href="/photos">Gallery</a>
-        <a class="item smoothScroll" href="/videos">Listen</a>
-        <div class="right item">
-          <a href="/login"><h3 class="gold kelly-name-font">Kelly Lin</h3></a>
-        </div>
-      </div>
+    <div class="ui margin-top-4 container">
       <div class="img-container">
         <%=image_tag "orchestra.jpg" %>
       </div>
@@ -59,65 +50,6 @@
             <b>Aaron T.</b> Founder & CEO of Menute, Inc.
           </p>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <br><br><br><br>
-  <h4 id="listen" class="ui horizontal divider header">
-    <i class="chevron down icon"></i>
-    LISTEN
-  </h4>
-
-
-  <div class="ui vertical stripe segment">
-    <div class="ui equal width stackable grid">
-        <% if current_user %>
-          <%= link_to "Add a Video", new_video_path, class: "ui red button" %>
-        <% end %>
-      <div class="center aligned row">
-        <div id ="dancing_dream" class="column">
-          <img src="http://img.youtube.com/vi/hjzppeZmN-I/0.jpg"/>
-        </div>
-      </div>
-      <br><br>
-      <div class="center aligned row">
-        <div class="column">
-          <iframe width="420" height="315" src="https://www.youtube.com/embed/Rf6-7XiB_O4" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="column">
-          <iframe width="420" height="315" src="https://www.youtube.com/embed/fVtVJFHuWr0" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="center aligned row">
-        <div class="column">
-          <iframe width="420" height="315" src="https://www.youtube.com/embed/M1nekISG5bQ" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="column">
-          <iframe width="420" height="315" src="https://www.youtube.com/embed/JUGApBvvWWc" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="center aligned row">
-        <div class="column">
-          <iframe width="420" height="315" src="https://www.youtube.com/embed/lr40eBDirOA" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="column">
-          <iframe width="420" height="315" src="https://www.youtube.com/embed/G7VKMnobUVQ" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br><br>
-
-  <div class="ui inverted vertical footer segment">
-    <div class="ui container">
-      <div class="sixteen wide column">
-        <p class="gold center-text">
-          <br>
-          Copyright <i class="copyright icon"></i> 2016 Kelly Lin | All rights reserved.
-        </p>
-        <br>
       </div>
     </div>
   </div>

@@ -17,7 +17,36 @@
 </head>
 <body>
 
+<div class="ui top fixed inverted menu">
+  <div class="item"></div>
+  <a class="item gold smoothScroll" href="/#about">About</a>
+  <a class="gold item" href="/events">Events</a>
+  <a class="gold item" href="/photos">Gallery</a>
+  <a class="gold item" href="/videos">Listen</a>
+  <div class="right item">
+    <% if current_user %>
+      <a href="/logout" class="gold kelly-name-font">Kelly Lin</a>
+    <% else %>
+    <a href="/login" class="gold kelly-name-font">Kelly Lin</a>
+    <% end %>
+  </div>
+  </div class="right item"></div>
+</div>
+
+<br>
+
 <%= yield %>
 
+<br><br><br><br>
+<div class="ui height-10 inverted vertical footer segment">
+  <div class="ui container">
+    <div class="sixteen wide column">
+      <p class="gold center-text">
+        <br>
+        Copyright <i class="copyright icon"></i> 2016 Kelly Lin | All rights reserved.
+      </p>
+    </div>
+  </div>
+</div>
 </body>
 </html>
