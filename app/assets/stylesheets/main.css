@@ -1,4 +1,6 @@
-.gold {color: #c5b358;}
+.gold {
+  color: #c5b358 !important;
+}
 
 body {
   background-color: #EEEDEB;
@@ -17,6 +19,13 @@ body {
 
 .boxed {
   border: 1rem solid #c5b358 ;
+}
+
+.margin-top-4 {
+  margin-top: 4rem;
+}
+.height-10 {
+  height: 10rem;
 }
 
 .center-text {text-align: center;}
